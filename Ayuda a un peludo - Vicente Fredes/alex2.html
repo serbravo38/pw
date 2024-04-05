@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayuda a un peludo</title>
+
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(254, 230, 255);   
+            display: flex;  
+            align-items: center; 
+            justify-content: center; /* Centra el contenido horizontalmente */
+            font-family: Arial, Helvetica, sans-serif; /* Aplica la fuente a todo el cuerpo del documento */
+            font-size: 15px; /* Tamaño de fuente predeterminado */
+        }
+
+        .container {
+            position: relative; /* Posición relativa para que los elementos internos puedan posicionarse con respecto a él */
+            max-width: 600px; /* Ancho máximo del contenedor */
+            padding: 20px; /* Espaciado interno para el contenido */
+            background-color: #fff; /* Fondo blanco */
+            border-radius: 10px; /* Borde redondeado */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+        }
+
+        .links {
+            position: absolute; /* Posicionamiento absoluto para que los enlaces queden fijos en una esquina */
+            top: 20px;
+            right: 20px;
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        .card {
+            width: 100%; /* Ancho completo del contenedor */
+            margin-top: 20px; /* Espacio superior */
+            border: 1px solid #ccc; /* Borde delgado */
+            border-radius: 5px; /* Borde redondeado */
+            overflow: hidden; /* Evita que el contenido se desborde */
+        }
+
+        .card-header img {
+            width: 100%; /* Ancho completo de la imagen */
+            height: auto; /* Altura automática */
+        }
+
+        .list-group-item {
+            font-weight: bold; /* Texto en negrita */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="links">
+        <a href="index.html">Inicio ></a>
+        <a href="gato.html">Volver a Gatos</a>
+    </div>
+
+    <div class="card">
+        <div class="card-header">
+            <img src="imagenes/gatoAlex.jpg" alt="alex">
+        </div>
+        
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Edad: 2 años</li>
+          <li class="list-group-item">Sexo: Macho</li>
+          <li class="list-group-item">Esterilizado: Sí</li>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>
